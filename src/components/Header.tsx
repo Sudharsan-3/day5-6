@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 
   
   useEffect(() => {
-    const handleOutsideClick = (event: MouseEvent) => {
+    const handleOutsideClick = () => {
       if (isOpen) setIsOpen(false);
     };
     document.addEventListener("click", handleOutsideClick);
